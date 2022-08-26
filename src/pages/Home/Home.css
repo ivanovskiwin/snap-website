@@ -1,0 +1,123 @@
+.main{
+    width: 100%;
+    display: flex;
+    gap: 2%;
+    justify-content: center;
+}
+
+.content{
+    width: 40%;
+}
+
+.imageContainer{
+    width: 40%;
+}
+
+.imageContainer img{
+    width: 100%;
+}
+
+.content h1{
+    color: var(--almost-black);
+    font-size: 88px;
+    margin-top: 140px;
+}
+
+.content p{
+    font-size: 18px;
+    color: var(--medium-gray);
+    width: 430px;
+    line-height: 25px;
+    margin-top: 70px;
+    margin-bottom: 80px;
+}
+
+.learnMoreButton{
+    font-weight: 700;
+    padding: 12px 20px;
+    border-radius: 12px;
+    color: var(--almost-white);
+    background-color: var(--almost-black);
+    border: 2px solid var(--almost-black);
+}
+
+.learnMoreButton:hover{
+    font-weight: 700;
+    border: 2px solid var(--almost-black);
+    color: var(--almost-black);
+    background-color: var(--almost-white);
+}
+
+.sponsorsContainer{
+    margin-top: 120px;
+    display: flex;
+    justify-content: left;
+    gap: 40px;
+}
+
+.sponsorsContainer img{
+    vertical-align: middle;
+}
+
+@media only screen and (max-width: 1393px){
+    .content h1{
+        font-size: 75px;
+        margin-top: 15%;
+    }
+}
+
+@media only screen and (max-width: 1035px){
+    .content h1{
+        font-size: 55px;
+    }
+    .content p{
+        font-size: 16px;
+    }
+}
+@media only screen and (max-width: 950px){
+    .content{
+        width: 50%;
+    }
+}
+@media only screen and (max-width: 800px){
+    .main{
+        flex-wrap: wrap-reverse;
+        justify-content:center;
+    }
+    .content{
+        width: 70%;
+    }
+    .imageContainer{
+        width: 70%;
+    }
+    .imageContainer img{
+        width: 100%;
+    }
+}
+@media only screen and (max-width: 665px){
+    .content{
+        width: 90%;
+    }
+    .imageContainer{
+        width: 100%;
+    }
+    .imageContainer img{
+        width: 100%;
+    }
+    .sponsorsContainer{
+        flex-wrap: wrap;
+    }
+}
+
+@media only screen and (max-width: 480px){
+    .content > p{
+        width: auto;
+    }
+    .content{
+        width: 100%;
+        text-align: center;
+    }
+    .sponsorsContainer{
+        justify-content: center;
+    }
+}

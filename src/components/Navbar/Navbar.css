@@ -1,0 +1,226 @@
+header{
+    width: 100%;
+    display: flex;
+    background-color: var(--almost-white);
+    padding: 20px 30px;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+#logo{
+    width: 90px;
+    padding: 10px;
+    height: 100%;
+}
+
+#logo img{
+    width: 100%;
+    vertical-align: middle;
+}
+
+.loginButtons{
+    margin-left: auto;
+    padding: 10px;
+    height: 100%;
+}
+.loginButtons a{
+    margin-right: 30px;
+    vertical-align: middle;
+    padding: 10px 20px;
+}
+
+.loginButtons .button:last-child{
+    border: 2px solid var(--medium-gray);
+    border-radius: 14px;
+}
+
+nav ul{
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    vertical-align: middle;
+    margin-left: 20px;
+    padding: 2px;
+    height: 100%;
+}
+
+.nav-item{
+    padding: 10px;
+    vertical-align: middle;
+}
+
+.nav-item > a:hover{
+    color: var(--almost-black);
+    transition: all 200ms ease-in;
+}
+
+.loginButtons > .button:hover{
+    color: var(--almost-black);
+    border-color: var(--almost-black);
+}
+
+.nav{
+    position: relative;
+}
+
+.navContent{
+    all: unset;
+    width: max-content;
+    display: none;
+    background-color: white;
+    padding: 20px;
+    position: absolute;
+    box-shadow: 1px 22px 90px -32px rgba(0,0,0,1);
+    -webkit-box-shadow: 1px 22px 90px -32px rgba(0,0,0,1);
+    -moz-box-shadow: 1px 22px 90px -32px rgba(0,0,0,1);
+    z-index: 1;
+    left: 0%;
+    top: 100%;
+    border-radius: 10px;
+}
+
+.navItem{
+    display: block;
+    width: 100%;
+    margin-top: 15px;
+}
+
+.navItem:first-child{
+    margin-top: 0;
+}
+
+.navItem > a > img {
+    width: 14px;
+    margin-right: 10px;
+    vertical-align: middle;
+}
+
+.navItem > a:hover{
+    color: var(--almost-black);
+}
+
+.navItem > a{
+    display: block;
+    width: 100%;
+}
+
+.nav > a .upArrow{
+    display: none;
+}
+.nav:hover > a .downArrow{
+    display: none;
+}
+.nav:hover > a .upArrow{
+    display: inline-block;
+}
+.nav img{
+    vertical-align: middle;
+}
+
+.nav:hover > .navContent{
+    display: inline-block;
+}
+
+.mobileNavIcon{
+    display: none;
+    width: 42px;
+    height: 30px;
+    vertical-align: middle;
+    margin-left: auto;
+    cursor: pointer;
+}
+.overlay{
+    display: none;
+    position:fixed;
+    width: 100vw;
+    height: 100vh;
+    top:0;
+    left:0;
+    z-index: 2;
+    background-color: rgba(0,0,0,0.6);
+}
+.mobileNav{
+    width: 40%;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left:100%;
+    z-index: 3;
+    transform: translate(-100%, 0%);
+    background-color: var(--almost-white);
+    padding: 20px;
+}
+
+.mobileNav ul{
+    list-style-type: none;
+    width: 100%;
+}
+
+.mobileNav-item{
+    font-size: 16px;
+    margin-top: 30px;
+}
+.mobileNav-item > a{
+    width: 100%;
+}
+.mobileNav .loginButtons{
+    width: 100%;
+    height: auto;
+    margin-left: 0;
+    margin-top: 20px;
+    text-align: center;
+
+}
+.mobileNav .loginButtons a{
+    display: inline-block;
+    width: 90%;
+    text-align: center;
+    margin-bottom: 10px;
+}
+.mobileNavCloseIcon{
+    display: block;
+    width: 38px;
+    margin-left: auto;
+    margin-right: 10px;
+}
+.mobileSubMenuContent{
+    display: none;
+    padding-left: 25px;
+}
+.mobileSubMenuContent.active{
+    display: list-item;
+}
+.mobileSubMenu li{
+    margin-top: 18px;
+}
+.mobileSubMenu > li > a > img {
+    width: 18px;
+    vertical-align: middle;
+    margin-right: 20px;
+}
+.mobileSubMenu > li > a{
+    width: 100%;
+    font-size: 15px;
+}
+@media only screen and (max-width: 800px){
+    header > nav{
+        display: none;
+    }
+    header > .loginButtons{
+        display: none;
+    }
+    .mobileNavIcon{
+        display: inline-block;
+    }
+    .overlay.active{
+        display: inline-block;
+    }
+}
+
+@media only screen and (max-width: 550px){
+    .mobileNav{
+        width: 60%;
+    }
+}
+
