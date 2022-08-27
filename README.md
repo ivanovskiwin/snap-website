@@ -1,6 +1,6 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
-# Project Name
+# Snap Website
 
 > This is a professional, clean looking and responsive website design. Made in React, HTML, CSS.
 
@@ -27,24 +27,24 @@ To get a local copy up and running follow these simple example steps.
 ### Setup
 
 -Next you need to clone this repository on your local machine. You can do that by simple
-    -git clone https://github.com/ivanovskiwin/snap-website.git
+- git clone https://github.com/ivanovskiwin/snap-website.git
 
 ### Install
 
 -To install the project you need to enter the directory you've cloned. Open a terminal and follow these steps:
-    - cd "REPLACE THIS BY THE DIRECTORY PATH OF THE CLONED PROJECT" . (to enter the directory)
-    - npm install (to install all the necessary modules and dependencies)
+- cd "REPLACE THIS BY THE DIRECTORY PATH OF THE CLONED PROJECT" . (to enter the directory)
+- npm install (to install all the necessary modules and dependencies)
 
 ### Usage
 -To run this project locally you just type simple:
-    - npm start
+- npm start
 And the project will be deployed on your machine so you can access it on browser by default on the URL: localhost:3000
 
 ## Authors
 
-👤 **Author1**
+👤 **Ivan Ivanovski**
 
-- GitHub: [@githubhandle](https://github.com/ivanovskiwin)
+- GitHub: [@ivanovskiwin](https://github.com/ivanovskiwin)
 - LinkedIn: [LinkedIn](https://www.linkedin.com/in/ivanovskiwin/)
 
 ## 🤝 Contributing
